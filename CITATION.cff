@@ -1,0 +1,20 @@
+cff-version: 0.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Fejzić"
+  given-names: "Emir"
+  orcid: "https://orcid.org/0000-0002-2489-8455"
+- family-names: "Niet"
+  given-names: "Taco"
+  orcid: "https://orcid.org/0000-0003-0266-2705"
+- family-names: "Wade"
+  given-names: "Cameron"
+  orcid: "https://orcid.org/0000-0003-2680-6881"
+- family-names: "Usher"
+  given-names: "Will"
+  orcid: "https://orcid.org/0000-0001-9367-1791"
+title: "Aligning the Western Balkans power sectors with the European Green Deal - supporting documents"
+version: 0.1.0
+doi: 10.5281/zenodo.7895233
+date-released: 2023-05-04
+url: "https://doi.org/10.5281/zenodo.7895233"
