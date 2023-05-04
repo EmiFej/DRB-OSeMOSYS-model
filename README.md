@@ -3,4 +3,4 @@
 
 
 # Licence
-The code in the DRB-OSeMOSYS-model is released as free software under the MIT License, see LICENSE.txt. However, different licenses and terms of use may apply to the various input data.
+The code in the DRB-OSeMOSYS-model is released as free software under the [MIT License](https://opensource.org/license/mit/), see LICENSE.txt. However, different licenses and terms of use may apply to the various input data.
