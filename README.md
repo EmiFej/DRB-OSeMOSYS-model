@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/636122125.svg)](https://zenodo.org/badge/latestdoi/636122125)
 
 # Paper supporting files
-This repository contains the data, model and solver needed to replicate the modelling efforts conducted for the paper titled: "**Aligning the Western Balkans power sectors with the European Green Deal**", DOI 10.1088/2515-7620/ad8ca4.
+This repository contains the data, model file, scripts, workflow and solver needed to replicate the modelling efforts conducted for the paper titled: "**Aligning the Western Balkans power sectors with the European Green Deal**", DOI 10.1088/2515-7620/ad8ca4.
 
 ### Scenarios
 ------------------
@@ -30,7 +30,7 @@ Bugs fixed in equations:
 
 The code used for this paper is based on the above mentioned OSeMOSYS_2017_11_08 version, with changes made by Taco Neit in 2016 and Youssef Almulla in 2020.  
 
-The OSeMOSYS model file can be accessed through this repository. Other versions are available at the [OSeMOSYS Website](http://www.osemosys.org/get-started.html)
+The OSeMOSYS model file can be accessed through this repository. Other versions are available at the [OSeMOSYS GitHub repository](https://github.com/OSeMOSYS/OSeMOSYS) and [OSeMOSYS Website](http://www.osemosys.org/get-started.html)
 
 ### Solver
 ------------------
