@@ -1,4 +1,4 @@
-# OSeMOSYS model repository for the Drina River Basin countries
+# OSeMOSYS model for the Drina River Basin countries
 [![DOI](https://zenodo.org/badge/636122125.svg)](https://zenodo.org/badge/latestdoi/636122125)
 
 # Paper supporting files
