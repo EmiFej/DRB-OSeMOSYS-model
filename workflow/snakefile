@@ -12,16 +12,16 @@ scenarios = ['ref_low','ref_high','ag_low','ag_high','el_low','el_high']
 
 rule all:
     input:
-        expand('../results/{scenario}/ProductionByTechnologyAnnual.csv', 
+        expand('results/{scenario}/ProductionByTechnologyAnnual.csv', 
                scenario=scenarios)
 
 rule create_lp:
     input:
-        model='../model_file/osemosys.txt',
-        data_file='../data_file/{scenario}/{scenario}.txt'
+        model='model_file/osemosys.txt',
+        data_file='data_file/{scenario}/{scenario}.txt'
     output:
-        lp_file='../lp_file/{scenario}/{scenario}.lp',
-        glpsol_log='../glpsol_logs/{scenario}/glpsol_log_{scenario}.txt'
+        lp_file='lp_file/{scenario}/{scenario}.lp',
+        glpsol_log='glpsol_logs/{scenario}/glpsol_log_{scenario}.txt'
     shell:
         'glpsol --check -m {input.model} -d {input.data_file} --wlp {output.lp_file} --log {output.glpsol_log}'
 
@@ -29,7 +29,7 @@ rule create_sol:
     input:
         rules.create_lp.output.lp_file
     output:
-        solution_file='../sol_file/{scenario}/{scenario}.sol',
+        solution_file='sol_file/{scenario}/{scenario}.sol',
     shell:
         'gurobi_cl ResultFile={output.solution_file} {input}'
 
@@ -38,8 +38,8 @@ rule otoole:
         solution_otoole_file= rules.create_sol.output.solution_file,
         txt_otoole_file= rules.create_lp.input.data_file
     params: 
-        otoole_csv_folder= '../results/{scenario}'
+        otoole_csv_folder= 'results/{scenario}'
     output:
-        '../results/{scenario}/ProductionByTechnologyAnnual.csv'
+        'results/{scenario}/ProductionByTechnologyAnnual.csv'
     shell:
         'otoole results gurobi csv {input.solution_otoole_file} {params.otoole_csv_folder} --input_datafile {input.txt_otoole_file}'
