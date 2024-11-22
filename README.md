@@ -32,6 +32,8 @@ The code used for this paper is based on the above mentioned OSeMOSYS_2017_11_08
 
 The OSeMOSYS model file can be accessed through this repository. Other versions are available at the [OSeMOSYS GitHub repository](https://github.com/OSeMOSYS/OSeMOSYS) and [OSeMOSYS Website](http://www.osemosys.org/get-started.html)
 
+
+
 ### Solver
 ------------------
 The solver used to obtain the results shown in the paper:
