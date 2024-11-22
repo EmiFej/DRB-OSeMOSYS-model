@@ -28,6 +28,14 @@ Bugs fixed in equations:
 * SC2 (both lower and upper)
 * RE4
 
+#### Run the model
+
+- [Setup the system and tool to run the model](https://github.com/EmiFej/DRB-OSeMOSYS-model/wiki/Setup-to-Run-the-Model)
+- Command to runt he automated workflow:
+  ```
+  snakemake -c all
+  ```
+ 
 The code used for this paper is based on the above mentioned OSeMOSYS_2017_11_08 version, with changes made by Taco Neit in 2016 and Youssef Almulla in 2020.  
 
 The OSeMOSYS model file can be accessed through this repository. Other versions are available at the [OSeMOSYS GitHub repository](https://github.com/OSeMOSYS/OSeMOSYS) and [OSeMOSYS Website](http://www.osemosys.org/get-started.html)
