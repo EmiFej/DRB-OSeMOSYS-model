@@ -1,0 +1,4 @@
+.snakemake
+glpsol_logs
+/home/eliasinul/repos/DRB-OSeMOSYS-model/gurobi.log
+lp_file/*
