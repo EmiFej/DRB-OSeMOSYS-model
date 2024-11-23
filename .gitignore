@@ -1,9 +1,12 @@
 .snakemake
-glpsol_logs
+.vscode
+logs/*
+
 /home/eliasinul/repos/DRB-OSeMOSYS-model/gurobi.log
 lp_file/*
 
-notebooks/data/*
+data/downloaded/CORINE_EU/*
+data/downloaded/ERA5/*
+data/downloaded/GADM/*
+data/downloaded/GWA/*
 
-data_file/125814/Results/u2006_clc2000_v2020_20u1_raster100m.zip
-data_file/125814/Results/u2006_clc2000_v2020_20u1_raster100m.zip:Zone.Identifier
