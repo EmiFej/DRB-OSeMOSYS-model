@@ -2,3 +2,8 @@
 glpsol_logs
 /home/eliasinul/repos/DRB-OSeMOSYS-model/gurobi.log
 lp_file/*
+
+notebooks/data/*
+notebooks/vis/*
+data_file/125814/Results/u2006_clc2000_v2020_20u1_raster100m.zip
+data_file/125814/Results/u2006_clc2000_v2020_20u1_raster100m.zip:Zone.Identifier
