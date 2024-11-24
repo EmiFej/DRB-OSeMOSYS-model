@@ -1,0 +1,12 @@
+.snakemake
+.vscode
+logs/*
+
+/home/eliasinul/repos/DRB-OSeMOSYS-model/gurobi.log
+lp_file/*
+
+data/downloaded/CORINE_EU/*
+data/downloaded/ERA5/*
+data/downloaded/GADM/*
+data/downloaded/GWA/*
+

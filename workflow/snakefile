@@ -18,12 +18,18 @@ rule all:
 rule create_lp:
     input:
         model='model_file/osemosys.txt',
-        data_file='data_file/{scenario}/{scenario}.txt'
+        data_file='data/scenarios/{scenario}/{scenario}.txt'
     output:
         lp_file='lp_file/{scenario}/{scenario}.lp',
-        glpsol_log='glpsol_logs/{scenario}/glpsol_log_{scenario}.txt'
+        glpsol_log='logs/glpsol_logs/{scenario}/glpsol_log_{scenario}.txt'
+    log:
+        'logs/{scenario}/create_lp.log'
     shell:
-        'glpsol --check -m {input.model} -d {input.data_file} --wlp {output.lp_file} --log {output.glpsol_log}'
+        '''
+        mkdir -p {output.lp_file:dirname} {output.glpsol_log:dirname}
+        glpsol --check -m {input.model} -d {input.data_file} \
+               --wlp {output.lp_file} --log {output.glpsol_log} &> {log}
+        ''' 
 
 rule create_sol:
     input:
