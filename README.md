@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/636122125.svg)](https://zenodo.org/badge/latestdoi/636122125)
 
 # Paper supporting files
-This repository contains the data, model file, scripts, workflow and solver needed to replicate the modelling efforts conducted for the paper titled: "**Aligning the Western Balkans power sectors with the European Green Deal**", DOI 10.1088/2515-7620/ad8ca4.
+This repository contains the data, model file, scripts, workflow and solver needed to replicate the modelling efforts conducted for the paper titled: "**Aligning the Western Balkans power sectors with the European Green Deal**", DOI 10.1088/2515-7620/ad8ca4 [https://stats.iop.org/article/10.1088/2515-7620/ad8ca4]
 
 ### Scenarios
 ------------------
